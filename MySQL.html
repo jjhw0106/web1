@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kor">
+    <head><meta charset="utf-8"/></head>
+</html>
+
+<Strong>MySQL</Strong>
+구글 검색 팁 
+<br>궁금한점~ in mysql
+<br>궁금한점~ in mysql cheat sheet
+<br>
+<br>
+<br>*용어정리
+<br>table
+<br>column
+<br>row = record
+<br>
+<br>*진행 순서(데이터 조회)
+<br>1. 로그인 : -uroot -p
+<br>2. 어떤 데이터베이스(스키마) 쓸거니? : USE 데이터베이스 명
+<br>3. SHOW DATABASES : 모든 데이터베이스를 보여줌
+<br>4. SHOW TABLES : 만들어져 있는 테이블 보여줌
+<br>5. SELECT * FROM TABLE명 : 테이블에서 모든 정보 가져옴
+<br>
+<br>*명령어 (대문자가 명령어, 소문자는 내가 지정한 이름들)
+<br>SHOW DATABASES: 데이터 베이스를 보여달라
+<br>USE opentutorials(스키마 이름) : opentutorials스키마에서 작업을 하겠다.
+<br>NULL/NOT NULL : 빈 값 허용한다 / 빈 값을 허용하지 않겠다.
+<br>AUTO_INCREMENT : 값을 1씩 올림(키값 등에 사용)
+<br>DESC 테이블명 : 테이블의 구조를 보여줌
+<br>RENAME TABLE topic TO topic_backup : 테이블 이름 변경
+<br>SELECT topic.id AS topic_id~: topic테이블의 id를 topic_id로 바꿔서 출력해라.
+<br>
+<br>테이블 삭제
+<br>DROP TABLE 테이블명
+<br>
+<br>테이블 만들기
+<br>*CREATE TABLE topic(
+<br>id INT(11) NOT NULL AUTO_INCREMENT(첫번째 열 id, 인트형 11사이즈, 널허용x, 숫자 자동증가),
+<br>title VARCHAR(100) NOT NULL,
+<br>created DATETIME NOT NULL,
+<br>...
+<br>);
+<br>
+<br>*INSERT (열 추가)
+<br>
+<br>*JOIN
+<br>SELECT * FROM LEFT JOIN author ON topic.author_id = author.id;
+<br>: author테이블과 topic에서 id가 같은 것들을 합쳐서 조회해라
+<br>
+<br>*READ
+<br>SELECT * FROM 테이블명 : 테이블에서 모든 정보 가져옴
+<br>
+<br>*UPDATE
+<br>UPDATE 테이블명 SET 바꿀 열 = ' ~ ' WHERE 조건이될 열 = '~';
+<br>
+<br>
