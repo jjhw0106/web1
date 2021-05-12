@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> 링크 연습하기 </h1>
+
+    <h3>텍스트에 링크 생성하기</h3>
+    <!--
+    a태그는 링크를 생성하는 태그다.
+    a태그는 링크된 페이지에 대한 내용을 컨텐츠로 포함한다.
+    a태그는 href 속성을 가진다.
+    href 속성은 이 링크와 연결된 페이지의 경로를 지정한다. 
+    -->
+    <h4>외부 사이트와 연결된 링크 생성하기</4>
+        <!-- 
+            외부사이트와 연결된 링크는 href속성의 경로가 "http://" 혹은 "https://"로 시작되어야 한다. 
+            http : 클라이언트와 서버사이에 전달되는 데이터가 암호화 되어있지 않다
+            https: 암호화 되어있다.
+        -->
+        <a href = "http://www.daum.net">다음</a>
+        <a href = "http://www.naver.com">네이버</a>
+        <a href = "http://www.google.com">구글</a>
+        <h4>사이트 내부 페이지와 연결된 링크 연습하기</4>
+        <!-- 
+            사이트 내부 페이지의 경로 작성하기 (상대경로)
+            1. 같은 폴더에 위치한 다른 페이지 : 바로 페이지 명 적기
+                <a href = "sample.html"> 샘플페이지 </a>
+            2. 하위 폴더에 위치한 페이지
+                <a href = "하위폴더명/sample.html"> 샘플페이지 </a>
+            3. 상위 폴더에 위치한 페이지
+                <a href = "../sample.html"> 샘플페이지 </a>
+            4. 형제 폴더에 위치한 페이지 
+                <a href = "../형제폴더/sample.html>" 샘플페이지 </a>, 형제페이지로 가기 위해선 상위폴더로 이동 후 참조해야 한다.
+         -->
+        <a href = "demo6-img.html"> img 연습 </a>
+        <a href = "board/list.html"> 하위폴더 주소 </a>
+        <a href = "../web1/HTML.html"> 형제폴더 주소 </a>
+
+
+    </body>
+</html>
